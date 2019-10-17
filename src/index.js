@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 
-import Appp from './App';
+import App from './App';
+import { toUnicode } from 'punycode';
 
 const app = (
     <BrowserRouter>
@@ -13,3 +14,4 @@ const app = (
 );
 
 ReactDOM.render(app, document.getElementById('root'));
+
